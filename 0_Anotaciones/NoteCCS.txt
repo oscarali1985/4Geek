@@ -1,0 +1,207 @@
+https://uniwebsidad.com/libros/css/capitulo-1/como-incluir-css-en-un-documento-xhtml
+
+1. Maquetación básica
+width: Ancho de un elemento.
+height: Alto de un elemento.
+vertical-align: Alineamiento vertical dentro de un elemento.
+margin: Espacio que se añade entre el elemento y sus vecinos. Se puede diferencia por lado (arriba, abajo, izquierda, derecha).
+padding: Relleno interior que se añade en los bordes del A diferencia de margin, cuenta para el tamaño del elemento.
+float: Mueve el elemento todo lo posible hacia el lado indicado. Esta propiedad se usa en el posicionamiento flotante de CSS. El tema del posicionamiento en CSS no es trivial y conviene estudiar cómo funciona antes de usar esta propiedad.
+
+2. Fuentes y texto
+font-family: Tipo de letra
+font-size: Tamaño de letra
+font-weight: Peso (normal, negrita, …)
+font-style: Estilo (normal, cursiva, …)
+text-decoration: “Decoraciones” como subrayado, tachado, etc.
+text-align: Alineación del texto (izquierda, derecha, etc.)
+text-transform: Mostrar un texto en mayúsculas, minúsculas o la primera letra de cada palabra en mayúsculas.
+
+3. Color y fondos
+color: Color del elemento. Se puede especificar en diferentes formatos como palabras predefinidas (red, green, etc.) RGB o como valor hexadecimal.
+background-color: Color del fondo del elemento.
+background-image: Permite especificar una imagen de fondo.
+background-repeat: Permite usar una imagen a modo de mosaico en diferentes modalidades.
+box-shadow: Crear un efecto de sombra para un elemento.
+4. Listas
+list-style-image: Usar la imagen especificada como viñeta para la lista.
+list-style-type: Diferentes estilos de viñetas y estilos de numeración para elementos de lista.
+5. Bordes
+border: Añade un borde a un elemento y establece algunas propiedades (grosor, estilo de línea, etc.)
+border-color: Color del borde.
+border-style: Diferentes estilos para el borde (sólido, puntos, etc.)
+border-radius: Permite crear esquinas redondeadas para un elemento.
+
+
+
+
+
+
+
+Hover
+/* unvisited link */
+a:link {
+  color: green;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+}
+Try it Yourself »
+Example
+Style links with different styles:
+a.ex1:hover, a.ex1:active {
+  color: red;
+}
+
+a.ex2:hover, a.ex2:active {
+  font-size: 150%;
+}
+Try it Yourself »
+Example
+Hover over a <span> element to show a <div> element (like a tooltip):
+div {
+  display: none;
+}
+
+span:hover + div {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Ejemplo de estilos CSS en un archivo externo</title>
+<link rel="stylesheet" type="text/css" href="/css/estilos.css" media="screen" />
+</head>
+
+<body>
+<p>Un párrafo de texto.</p>
+</body>
+</html>
+Normalmente, la etiqueta <link> incluye cuatro atributos cuando enlaza un archivo CSS:
+rel: indica el tipo de relación que existe entre el recurso enlazado (en este caso, el archivo CSS) y la página HTML. Para los archivos CSS, siempre se utiliza el valor stylesheet
+type: indica el tipo de recurso enlazado. Sus valores están estandarizados y para los archivos CSS su valor siempre es text/css
+href: indica la URL del archivo CSS que contiene los estilos. La URL indicada puede ser relativa o absoluta y puede apuntar a un recurso interno o externo al sitio web.
+media: indica el medio en el que se van a aplicar los estilos del archivo CSS. Más adelante se explican en detalle los medios CSS y su funcionamiento.
+
+
+
+
+1.8. Medios CSS
+Una de las características más importantes de las hojas de estilos CSS es que permiten definir diferentes estilos para diferentes medios o dispositivos: pantallas, impresoras, móviles, proyectores, etc.
+Además, CSS define algunas propiedades específicamente para determinados medios, como por ejemplo la paginación y los saltos de página para los medios impresos o el volumen y tipo de voz para los medios de audio. La siguiente tabla muestra el nombre que CSS utiliza para identificar cada medio y su descripción:
+Medio
+Descripción
+all
+Todos los medios definidos
+braille
+Dispositivos táctiles que emplean el sistema braille
+embosed
+Impresoras braille
+handheld
+Dispositivos de mano: móviles, PDA, etc.
+print
+Impresoras y navegadores en el modo "Vista Previa para Imprimir"
+projection
+Proyectores y dispositivos para presentaciones
+screen
+Pantallas de ordenador
+speech
+Sintetizadores para navegadores de voz utilizados por personas discapacitadas
+tty
+Dispositivos textuales limitados como teletipos y terminales de texto
+tv
+Televisores y dispositivos con resolución baja
+Los medios más utilizados actualmente son screen (para definir el aspecto de la página en pantalla) y print (para definir el aspecto de la página cuando se imprime), seguidos de handheld (que define el aspecto de la página cuando se visualiza mediante un dispositivo móvil).
+Además, CSS clasifica a los medios en diferentes grupos según sus características. La siguiente tabla resume todos los grupos definidos en el estándar:
+Medio
+Continuo / Paginado
+Visual / Auditivo / Táctil / Vocal
+Mapa de bits / Caracteres
+Interactivo / Estático
+braille
+continuo
+táctil
+caracteres
+ambos
+embossed
+paginado
+táctil
+caracteres
+estático
+handheld
+ambos
+visual, auditivo, vocal
+ambos
+ambos
+print
+paginado
+visual
+mapa de bits
+estático
+projection
+paginado
+visual
+mapa de bits
+interactivo
+screen
+continuo
+visual, auditivo
+mapa de bits
+ambos
+speech
+continuo
+vocal
+(no tiene sentido)
+ambos
+tty
+continuo
+visual
+caracteres
+ambos
+tv
+ambos
+visual, auditivo
+mapa de bits
+ambos
+La gran ventaja de CSS es que permite modificar los estilos de una página en función del medio en el que se visualiza. Existen cuatro formas diferentes de indicar el medio en el que se deben aplicar los estilos CSS.
+
+1.8.3. Medios definidos con la etiqueta <link>
+Si se utiliza la etiqueta <link> para enlazar los archivos CSS externos, se puede utilizar el atributo media para indicar el medio o medios en los que se aplican los estilos de cada archivo:
+<link rel="stylesheet" type="text/css" media="screen" href="basico.css" />
+<link rel="stylesheet" type="text/css" media="print, handheld" href="especial.css" />
+En este ejemplo, el primer archivo CSS se tiene en cuenta cuando la página se visualiza en la pantalla (media="screen"). Los estilos indicados en el segundo archivo CSS, se aplican al imprimir la página (media="print") o al visualizarla en un dispositivo móvil (media="handheld"), como por ejemplo en un iPhone.
+Si la etiqueta <link> no indica el medio CSS, se sobreentiende que los estilos se deben aplicar a todos los medios, por lo que es equivalente a indicar media="all".
+
+1.9. Comentarios
+CSS permite incluir comentarios entre sus reglas y estilos. Los comentarios son contenidos de texto que el diseñador incluye en el archivo CSS para su propia información y utilidad. Los navegadores ignoran por completo cualquier comentario de los archivos CSS, por lo que es común utilizarlos para estructurar de forma clara los archivos CSS complejos.
+El comienzo de un comentario se indica mediante los caracteres /* y el final del comentario se indica mediante */, tal y como se muestra en el siguiente ejemplo:
+/* Este es un comentario en CSS */
+Los comentarios pueden ocupar tantas líneas como sea necesario, pero no se puede incluir un comentario dentro de otro comentario:
+/* Este es un
+   comentario CSS de varias
+   lineas */
