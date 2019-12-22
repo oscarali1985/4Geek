@@ -1,0 +1,53 @@
+git fetch
+El comando git fetch comunica con un repositorio remoto y obtiene toda la información que se encuentra en ese repositorio que no está en el tuyo actual y la almacena en tu base de datos local.
+
+En primer lugar, observamos este comando en Traer y Combinar Remotos y seguimos viendo ejemplos de su uso en Ramas Remotas.
+
+También lo usamos en varios de los ejemplos en Contribuyendo a un Proyecto.
+
+Lo usamos para buscar una única referencia específica que se encuentra fuera del espacio por defecto en Referencias de Pull Request y vemos cómo buscar en una agrupación en Agrupaciones.
+
+Configuramos refspecs altamente personalizadas con el fin de hacer que git fetch haga algo un poco diferente de lo predeterminado en Las especificaciones para hacer referencia a…​ (refspec).
+
+git pull
+El comando git pull es básicamente una combinación de los comandos git fetch y git merge, donde Git descargará desde el repositorio remoto especificado y a continuación, de forma inmediata intentará combinarlo en la rama en la que te encuentres.
+
+Se introduce rápidamente en Traer y Combinar Remotos y mostramos la forma de ver lo que se fusionará si se ejecuta en Inspeccionar un Remoto.
+
+También vemos cómo usarlo para ayudar con dificultades de rebase en Reorganizar una Reorganización.
+
+Mostramos cómo usarlo con una URL para obtener los cambios de forma de una sola vez en Recuperando ramas remotas.
+
+Por último, mencionamos muy rápidamente que se puede utilizar la opción --verify-signatures con el fin de verificar qué commits que estás descargando han sido firmados con GPG en Firmando Commits.
+
+git push
+El comando git push se utiliza para comunicar con otro repositorio, calcular lo que tu base de datos local tiene que la remota no tiene, y luego subir (push) la diferencia al otro repositorio. Se requiere acceso de escritura al otro repositorio y por tanto normalmente se autentica de alguna manera.
+
+En primer lugar, observamos el comando git push en Enviar a Tus Remotos. Aquí cubrimos los fundamentos de subir una rama a un repositorio remoto. En Publicar profundizamos un poco más en la subida de ramas específicas y en Hacer Seguimiento a las Ramas vemos cómo configurar el seguimiento de ramas a las que subir automáticamente. En Eliminar Ramas Remotas utilizamos el indicador --delete para eliminar una rama en el servidor con git push.
+
+A lo largo de Contribuyendo a un Proyecto vemos varios ejemplos de uso de git push para compartir trabajo en ramas de múltiples repositorios remotos.
+
+Vemos cómo usarlo para compartir las etiquetas que has creado con la opción --tags en Compartir Etiquetas.
+
+En Publicando Cambios de Submódulo utilizamos la opción --recurse-submodules para comprobar que todo nuestro trabajo en submódulos se ha publicado antes de subir el superproyecto, lo cual puede ser muy útil cuando se utilizan submódulos.
+
+En Otros puntos de enganche del lado cliente hablamos brevemente sobre el gancho pre-push, que es un script que podemos establecer para que se ejecute antes de que una subida se complete para verificar qué se debe permitir subir.
+
+Por último, en Enviando (push) referencias echamos un vistazo a la subida con un refspec completo en lugar de los atajos generales que se utilizan normalmente. Esto puede ayudar a ser muy específico acerca de qué trabajo se desea compartir.
+
+git remote
+El comando git remote es una herramienta de gestión para el registro de repositorios remotos. Esto te permite guardar largas direcciones URL como cortos manejadores (handles), tales como 'origin', para que no tengas que escribir las URL todo el tiempo. Puedes tener varios de estos y el comando git remote se utiliza para añadir, modificar y borrarlos.
+
+Este comando se trata en detalle en Trabajar con Remotos, incluyendo listar, añadir, eliminar y cambiar el nombre de ellos.
+
+Se utiliza en casi todos los capítulos subsiguientes en el libro también, pero siempre en la formato estándar git remote add <nombre> <url>.
+
+git archive
+El comando git archive se utiliza para crear un archivo empaquetado de una instantánea específica del proyecto.
+
+Usamos git archive para crear un tarball de un proyecto para su compartición en Preparando una versión.
+
+git submodule
+El comando git submodule se utiliza para gestionar repositorios externos dentro de repositorios normales. Esto podría ser por bibliotecas u otros tipos de recursos compartidos. El comando submodule tiene varios sub-commandos (add, update, sync, etc) para la gestión de estos recursos.
+
+Este comando es sólo mencionado y cubierto enteramente en Submódulos.
