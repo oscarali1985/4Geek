@@ -1,5 +1,11 @@
 https://uniwebsidad.com/libros/css/capitulo-1/como-incluir-css-en-un-documento-xhtml
 
+<LINK REL=StyleSheet HREF="index.css" TYPE="text/css" MEDIA=screen>
+
+Guia CSS
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+
+
 1. Maquetación básica
 width: Ancho de un elemento.
 height: Alto de un elemento.

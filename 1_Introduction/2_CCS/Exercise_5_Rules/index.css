@@ -1,0 +1,25 @@
+/* Este es un
+   comentario CSS de varias
+   lineas */
+
+   body{
+   background-image: url(http://assets.breatheco.de/apis/img/bg/background-vertical.jpg);
+   	font-family:"Times new Roman";
+   	background-repeat: repeat-y;
+   	padding:20px
+   }
+
+   h1{color:red;font-family:"Courier";text-align:center;}
+   h2{text-decoration: underline}
+
+   #id1{
+   background:rgb(255,255,255,0.5);
+   padding:5px;
+   }
+   a:hover {
+     color: green;
+   }
+   a{
+     text-decoration:none;
+     hover
+   }
