@@ -1,0 +1,30 @@
+Informacion de cursos
+Para utilizar
+
+  Letras
+    https://fonts.google.com/
+  Iconos
+    https://fontawesome.com/
+
+Para html y css
+
+https://www.w3schools.com/
+
+
+HTML
+  VIDEO
+  http://lineadecodigo.com/html5/video-a-pantalla-completa/
+  https://www.elmaquetadorweb.com/2015/06/etiqueta-video-html5-responsive-y-como.html
+
+css
+
+https://uniwebsidad.com/libros/css/
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+https://developer.mozilla.org/en-US/docs/Web/CSS/font-size
+
+links
+https://ccm.net/faq/3301-remove-the-underline-under-the-links-in-html-css
+
+
+Git
+    http://www.7sabores.com/blog/git-comandos-basicos

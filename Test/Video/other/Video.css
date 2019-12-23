@@ -1,0 +1,18 @@
+/* Este es un
+   comentario CSS de varias
+   lineas */
+   element.requestFullscreen();
+   element.mozRequestFullScreen();
+   element.webkitRequestFullscreen();
+   element.msRequestFullscreen();
+
+   function getFullscreen(element){
+  if(element.requestFullscreen) {
+      element.requestFullscreen();
+    } else if(element.mozRequestFullScreen) {
+      element.mozRequestFullScreen();
+    } else if(element.webkitRequestFullscreen) {
+      element.webkitRequestFullscreen();
+    } else if(element.msRequestFullscreen) {
+      element.msRequestFullscreen();
+    }

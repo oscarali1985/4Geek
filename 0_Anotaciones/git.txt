@@ -1,3 +1,9 @@
+Info Git
+
+
+hola
+http://www.7sabores.com/blog/git-comandos-basicos
+
 git fetch
 El comando git fetch comunica con un repositorio remoto y obtiene toda la información que se encuentra en ese repositorio que no está en el tuyo actual y la almacena en tu base de datos local.
 
