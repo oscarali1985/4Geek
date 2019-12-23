@@ -1,7 +1,34 @@
 Info Git
 
+Git init
+Git status
 
-hola
+git add . o archivo
+
+
+git config --global user.email "oscarali1985@hotmail.com"
+git config --global user.name "oscarali1985"
+git commit
+
+Se añade version y se guarda :wq!
+
+git log
+
+----
+Git branch
+git brancj login
+git check out login
+git cheout master
+
+https://github.com/oscarali1985/4geek.git
+
+git commit -m "first commit"
+git remote add origin https://github.com/oscarali1985/4geeks.git
+git push -u origin master
+
+
+
+
 http://www.7sabores.com/blog/git-comandos-basicos
 
 git fetch
