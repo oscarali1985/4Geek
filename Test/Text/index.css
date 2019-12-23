@@ -1,0 +1,51 @@
+/*Estilos para el ejercicio CUO1042D
+https://aprenderaprogramar.com/foros/index.php?topic=6678.0
+Estilo general para los contenedores*/
+div{
+    float:left;
+    margin:33px;
+    padding:0;
+    width:180px;
+    height:300px;
+    border: solid 6px red;
+}
+
+/*Márgenes eliminados en todos los parrafos*/
+p{
+    margin:0;
+}
+
+/*Margen inferior para el primer parrafo del primer contenedor*/
+div:first-child p:first-child{
+    margin-bottom:10px;
+}
+
+/*Estilos para los parrafos del primer contenedor*/
+div:first-child p{
+
+    text-transform:uppercase;
+    letter-spacing:5px;
+
+}
+
+/*Estilos para la primera letra de cada parrafo del primer contenedor*/
+div:first-child p::first-letter{
+    text-transform:uppercase;
+    font-size:250%;
+}
+
+/*Estilos para el parrafo del segundo contenedor*/
+
+div:nth-child(2) p{
+    text-transform:lowercase;
+    letter-spacing:10px;
+    word-wrap:break-word;
+}
+
+/*Estilos para el parrafo del tercer contenedor*/
+
+div:last-child p{
+    text-transform:capitalize;
+    word-spacing:10px;
+    word-wrap:break-word;
+}
