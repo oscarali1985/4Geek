@@ -1,0 +1,7 @@
+/* Este es un
+   comentario CSS de varias
+   lineas */
+   body{margin: 0;}
+   #sectionA{background: blue; height:900px;width:33%;float:left;}
+   #sectionB{background: red;  height:900px;width:33%;float:left;}
+   #sectionC{background: green;height:900px;width:33%;float:left;}
