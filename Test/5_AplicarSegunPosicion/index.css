@@ -1,0 +1,6 @@
+/* Este es un
+   comentario CSS de varias
+   lineas */
+   #myUL li:first-child{background: blue;}
+   #myUL li:nth-child(3){background: orange;}
+   #myUL li a:first-of-type{background: green;}

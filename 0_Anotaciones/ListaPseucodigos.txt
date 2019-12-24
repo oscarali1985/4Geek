@@ -1,0 +1,37 @@
+Aquí hay una lista de las pseudo-clases más usadas:
+
+https://student.breatheco.de/course/coding-introduction/2/l/mastering-css-selectors
+https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
+
+Selector	Ejemplo	Descripción del Ejemplo
+:active	a:active	Selecciona el enlace activo
+:checked	input:checked	Selecciona cada elemento <input>marcado
+:disabled	input:disabled	Selecciona cada elemento <input>deshabilitado
+:empty	p:empty	Selecciona cada elemento <p>que no tiene hijos
+:enabled	input:enabled	Selecciona cada elemento <input>habilitado
+:first-child	p:first-child	Selecciona cada elemento <p>que sea el primer hijo de su padre
+:first-of-type	p:first-of-type	Selecciona cada elemento <p>que sea el primer elemento <p>de su padre
+:focus	input:focus	Selecciona el elemento <input>que tiene el foco
+:hover	a:hover	Selecciona enlaces sobre los que está el cursor
+:in-range	input:in-range	Selecciona elementos <input>con un valor dentro de un rango específico
+:invalid	input:invalid	Selecciona todos los elementos <input>con un valor no válido
+:lang(language)	p:lang(it)	Selecciona cada elemento <p>con un valor de tributo que comience con "it"
+:last-child	p:last-child	Selecciona cada elemento <p>que sea el último hijo de su padre
+:last-of-type	p:last-of-type	Selecciona cada elemento <p>que sea el último elemento <p>de su padre
+:link	a:link	Selecciona todos los enlaces no visitados
+:not(selector)	:not(p)	Selecciona cada elemento que no sea un elemento <p>
+:nth-child(n)	p:nth-child(2)	Selecciona cada elemento <p>que sea el segundo hijo de su padre
+:nth-last-child(n)	p:nth-last-child(2)	Selecciona cada elemento <p>que sea el segundo hijo de su padre, contando desde el último hijo
+:nth-last-of-type(n)	p:nth-last-of-type(2)	Selecciona cada elemento <p>que sea el segundo elemento <p>de su padre, contando desde el último hijo
+:nth-of-type(n)	p:nth-of-type(2)	Selecciona cada elemento <p>que sea el segundo elemento <p>de su padre
+:only-of-type	p:only-of-type	Selecciona cada elemento <p>que sea el único elemento <p>de su padre
+:only-child	p:only-child	Selecciona cada elemento <p>que sea el único hijo de su padre
+:optional	input:optional	Selecciona elementos <input>sin atributo "requerido"
+:out-of-range	input:out-of-range	Selecciona elementos <input>con un valor fuera de un rango especificado
+:read-only	input:read-only	Selecciona elementos <input>con un atributo "readonly" especificado
+:read-write	input:read-write	Selecciona elementos <input>sin atributo "readonly"
+:required	input:required	Selecciona los elementos <input>con un atributo "requerido" especificado
+:root	root	Selecciona el elemento raíz del documento
+:target	#news:target	Selecciona el elemento #news actualmente activo (haciendo click en una URL que contiene ese nombre de ancla)
+:valid	input:valid	Selecciona todos los elementos <input>con un valor válido
+:visited	a:visited	Selecciona todos los enlaces visitados
