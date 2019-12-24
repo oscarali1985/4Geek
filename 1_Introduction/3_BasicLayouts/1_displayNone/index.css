@@ -1,0 +1,18 @@
+/* Este es un
+   comentario CSS de varias
+   lineas */
+   /* your code here */
+   #myFirstH2{
+     visibility: hidden;
+   }
+
+   #mySecondH2{
+     display: none;
+   }
+
+   li{
+   display: inline-block;
+   }
+   strong{
+   display: block;
+   }
