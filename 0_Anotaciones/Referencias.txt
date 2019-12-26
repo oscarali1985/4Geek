@@ -30,3 +30,7 @@ https://ccm.net/faq/3301-remove-the-underline-under-the-links-in-html-css
 
 Git
     http://www.7sabores.com/blog/git-comandos-basicos
+
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery
