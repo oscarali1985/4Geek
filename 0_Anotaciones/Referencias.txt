@@ -44,3 +44,6 @@ https://www.w3schools.com/css/css3_flexbox.asp#align-content
 https://developer.mozilla.org/en-US/docs/Web/CSS/flex
 https://cssreference.io/flexbox/
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+Layaout o Margenes **
+https://www.w3schools.com/html/html_layout.asp
