@@ -1,3 +1,9 @@
+
+
+https://developer.mozilla.org/en-US/docs/Web
+https://www.w3schools.com/
+https://css-tricks.com/snippets/
+
 Informacion de cursos
 Para utilizar
 
@@ -17,7 +23,7 @@ HTML
   https://www.elmaquetadorweb.com/2015/06/etiqueta-video-html5-responsive-y-como.html
 https://aprenderaprogramar.com/foros/index.php?board=1.0
 css
-
+https://cssreference.io/
 https://uniwebsidad.com/libros/css/
 https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
 https://developer.mozilla.org/en-US/docs/Web/CSS/font-size
@@ -34,3 +40,7 @@ Git
 
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery
+https://www.w3schools.com/css/css3_flexbox.asp#align-content
+https://developer.mozilla.org/en-US/docs/Web/CSS/flex
+https://cssreference.io/flexbox/
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
