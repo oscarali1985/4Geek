@@ -3,6 +3,7 @@
 https://developer.mozilla.org/en-US/docs/Web
 https://www.w3schools.com/
 https://css-tricks.com/snippets/
+https://www.oloblogger.com/2016/05/galeria-imagenes-jquery-miniaturas.html
 
 Informacion de cursos
 Para utilizar
@@ -11,6 +12,10 @@ Para utilizar
     https://fonts.google.com/
   Iconos
     https://fontawesome.com/
+
+  Imagenes
+  http://lorempixel.com/
+  http://placekitten.com/200/300
 
 Para html y css
 
