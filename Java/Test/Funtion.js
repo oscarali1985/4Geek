@@ -1,4 +1,7 @@
 var globalVar = 2;
+var variable1 =0;
+var variable2 =0;
+
 
 //this is my multi function, receives 2 variables and multiplies them.
 function multi(variable1, variable2){
