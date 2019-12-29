@@ -1,0 +1,24 @@
+Const: Esta palabra clave se utiliza cuando el valor permanece constante durante toda la vida del script. El valor de la variable declarada con esta palabra clave nunca se puede cambiar. Si intenta cambiarlo, se producirá un error.
+
+Let: Los valores solo están limitados al alcance del bloque de código (cualquier cosa entre paréntesis) en el que se declara. Si una función tiene más de un bloque de código, la variable se considerará una variable diferente en cada bloque.
+
+Var: Su alcance está dentro de la función en la que se declara. Esto significa que la variable se mantendrá igual durante toda la función, incluso si hay más de un bloque de código en la función.
+
+var age = 24;
+age = 30;
+
+//To print the variable 'age' you can use document.write
+document.write(age);
+
+//Or console.log
+console.log(age);
+
+Data-Type	Posible Valores	Descripción
+Booleano	Verdadero | Falso	Los booleanos están destinados a operaciones lógicas. Si le preguntas a una computadora algo como: "¿X es igual a 3?" Responderá con un booleano (verdadero o falso).
+Cadena	Cualquier serie de caracteres	Las cadenas son la única forma en que tenemos que almacenar palabras (series de caracteres). Nota: las cadenas deben estar encerradas entre comillas.
+Número	Solo números	Números enteros, números negativos, números decimales, flotadores, etc. Todos los tipos posibles de números.
+Nota: Si incluye un número entre comillas, JavaScript lo tratará como una cadena.
+Indefinido	El vacío	Cuando una variable no tiene un valor asignado, queda indefinida.
+Arreglo	Una lista de cualquier tipo de valor.	Una sucesión de cualquier tipo de valores. Pueden ser tipos mixtos de valores; por ejemplo: [2, 3, ‘Word’, 2, 1, null, 232, 5, 3, 23, 234, 5, ‘hello’].
+Objetos	Cualquier objeto	Puedes crear tus propios tipos de datos con operaciones más complejas. Hablaremos más sobre esto más adelante.
+Nulo	Solo nulo	Se utiliza para especificar cuándo la base de datos o cualquier otra función no devuelve nada.

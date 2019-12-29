@@ -12,10 +12,12 @@ Para utilizar
     https://fonts.google.com/
   Iconos
     https://fontawesome.com/
+    https://forkaweso.me/Fork-Awesome/icons/
 
   Imagenes
   http://lorempixel.com/
   http://placekitten.com/200/300
+  https://www.danielnabil.com/blog/lorem-pixum-generadores-automaticos-imagenes-maquetacion-web/
 
 Para html y css
 
