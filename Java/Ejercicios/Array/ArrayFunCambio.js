@@ -1,7 +1,7 @@
 //declaring the array
 var myArray = ['sunday','monday','tuesday','wednesday','thursday','friday','saturday'];
 var arrayTem =[];
-var posCamArra = 6; 
+var posCamArra = 1; 
 var nuevovalor="Ana";
 
 function cambio(posCamArra,nuevovalor,myArray,arrayTem){
@@ -29,4 +29,4 @@ function cambio(posCamArra,nuevovalor,myArray,arrayTem){
 //3. print the position of step 2
 console.log(myArray);
 console.log(arrayTem);
-console.log(myArray[posCamArra-1]);
+//console.log(myArray[posCamArra-1]);

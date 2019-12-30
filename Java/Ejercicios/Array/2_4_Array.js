@@ -8,12 +8,10 @@
 var mySampleArray = ['Esmeralda','Kiko','Ruth','Lebron','Pedro','Maria','Lou','Fernando','Cesco','Bart','Annie'];
 var arrayTem =[];
 //your code here
-var posCamArra = 2; 
+var posCamArra = 10; 
 var nuevovalor="Steven";
 
         function cambio(posCamArra,nuevovalor,myArray,arrayTem){
-    console.log(myArray[2]);
-
     for (x=0 ; x<posCamArra; x++){
          arrayTem.push(myArray[x]);
       }
@@ -35,9 +33,10 @@ var nuevovalor="Steven";
 
 
 
-console.log(mySampleArray);
+//console.log(mySampleArray);
 cambio(posCamArra,nuevovalor,mySampleArray,arrayTem)
 console.log(mySampleArray);
+//console.log(arrayTem);
 //e3ra parte
 
 //console.log(mySampleArray.reverse());
