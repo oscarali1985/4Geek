@@ -23,7 +23,7 @@ git cheout master
 https://github.com/oscarali1985/4geek.git
 
 git commit -m "first commit"
-git remote add origin https://github.com/oscarali1985/4geeks.git
+git remote add origin https://github.com/oscarali1985/JavaOamd.git
 git push -u origin master
 
 
