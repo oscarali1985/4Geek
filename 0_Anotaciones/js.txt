@@ -1,0 +1,6 @@
+Put the script tag in the html head with scr attribute to the JS file location. eg
+<script type="text/javascript" src="jsfile.js"></script>
+Put the script tag in the html head with JS code. eg.
+<script type="text/javascript">
+  alert("This is from JavaScript");
+</script>

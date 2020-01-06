@@ -1,0 +1,31 @@
+/* Este es un
+   comentario CSS de varias
+   lineas */
+/*
+li:nth-child(even){
+  background-color: green;
+}
+*/
+p+ ol li:nth-child(even){
+  background-color: green;
+}
+tr:nth-child(odd){
+  background-color: yellow;
+}
+h2+ul li{
+  color:red;
+}
+   /* Este es un */
+   body{background:blue;
+   color: blue;}
+
+    div{
+     background: #BDBDBD;  /*Gray Backgorund to make the div visible */
+     margin: 0 auto;
+     width: 400px;  /*This should be the max-widh of your website*/
+     display: block;
+     padding: 10px;
+    }
+    ul li, ol li{
+    	color: green;
+    }
