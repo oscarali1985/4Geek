@@ -5,3 +5,7 @@ Citas
 <blockquote></blockquote>
 
 Hol
+
+Listas numericas ol li
+
+Para img el alt es para personas invidentes debe ser usada.

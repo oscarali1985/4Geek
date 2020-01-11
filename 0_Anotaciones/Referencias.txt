@@ -1,5 +1,6 @@
 
-
+ID para JS
+clases para CSS
 https://developer.mozilla.org/en-US/docs/Web
 https://www.w3schools.com/
 https://css-tricks.com/snippets/

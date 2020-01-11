@@ -8,8 +8,9 @@ git add . o archivo
 
 git config --global user.email "oscarali1985@hotmail.com"
 git config --global user.name "oscarali1985"
+git config --list
 git commit
-
+git commit -m "hola"
 Se añade version y se guarda :wq!
 
 git log
