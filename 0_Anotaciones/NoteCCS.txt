@@ -6,6 +6,7 @@ Guia CSS
 https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
 
 
+
 1. Maquetación básica
 width: Ancho de un elemento.
 height: Alto de un elemento.
@@ -13,6 +14,7 @@ vertical-align: Alineamiento vertical dentro de un elemento.
 margin: Espacio que se añade entre el elemento y sus vecinos. Se puede diferencia por lado (arriba, abajo, izquierda, derecha).
 padding: Relleno interior que se añade en los bordes del A diferencia de margin, cuenta para el tamaño del elemento.
 float: Mueve el elemento todo lo posible hacia el lado indicado. Esta propiedad se usa en el posicionamiento flotante de CSS. El tema del posicionamiento en CSS no es trivial y conviene estudiar cómo funciona antes de usar esta propiedad.
+
 
 2. Fuentes y texto
 font-family: Tipo de letra
@@ -24,20 +26,60 @@ text-align: Alineación del texto (izquierda, derecha, etc.)
 text-transform: Mostrar un texto en mayúsculas, minúsculas o la primera letra de cada palabra en mayúsculas.
 
 3. Color y fondos
+
+background lightblue url("img_tree.gif") no-repeat fixed center;
+background color image repeat attachment position
+
 color: Color del elemento. Se puede especificar en diferentes formatos como palabras predefinidas (red, green, etc.) RGB o como valor hexadecimal.
 background-color: Color del fondo del elemento.
 background-image: Permite especificar una imagen de fondo.
 background-repeat: Permite usar una imagen a modo de mosaico en diferentes modalidades.
 box-shadow: Crear un efecto de sombra para un elemento.
+
+
+background-attachment: scroll|fixed|local|initial|inherit;
+position: left top | left center | left bottom | right top | right center | right bottom |            center top | center center | center bottom | 
+background-size: auto|length|cover|contain|initial|inherit;
+* auto	Default value. The background image is displayed in its original size	
+* length	Sets the width and height of the background image. The first value sets the       width, the second value sets the height. If only one value is given, the second is set to "auto". Read about length units	
+percentage	Sets the width and height of the background image in percent of the parent element. The first value sets the width, the second value sets the height. If only one value is given, the second is set to "auto"	
+* cover	Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges	
+contain	Resize the background image to make sure the image is fully visible	
+* initial	Sets this property to its default value. Read about initial	
+* inherit	Inherits this property from its parent element. Read about inherit
+
+background-repeat: repeat|repeat-x|repeat-y|no-repeat|initial|inherit;
+
+      repeat	The background image is repeated both vertically and horizontally.  The last image will be clipped if it does not fit. This is default	
+      repeat-x	The background image is repeated only horizontally	
+      repeat-y	The background image is repeated only vertically	
+      no-repeat	The background-image is not repeated. The image will only be shown once	
+space	The background-image is repeated as much as possible without clipping. The first and last images are pinned to either side of the element, and whitespace is distributed evenly between the images	
+round	The background-image is repeated and squished or stretched to fill the space (no gaps)	
+      initial	Sets this property to its default value. Read about initial	
+      inherit	Inherits this property from its parent element. Read about inherit
+
+
 4. Listas
 list-style-image: Usar la imagen especificada como viñeta para la lista.
 list-style-type: Diferentes estilos de viñetas y estilos de numeración para elementos de lista.
+
 5. Bordes
 border: Añade un borde a un elemento y establece algunas propiedades (grosor, estilo de línea, etc.)
 border-color: Color del borde.
 border-style: Diferentes estilos para el borde (sólido, puntos, etc.)
 border-radius: Permite crear esquinas redondeadas para un elemento.
 
+border: color grosor estilo;
+border: black 1px solid;
+
+En sentido de las agujas del reloj
+padding  top right botton left
+padding: 25px 50px 75px 100px;
+top padding is 25px
+right padding is 50px
+bottom padding is 75px
+left padding is 100px
 
 
 

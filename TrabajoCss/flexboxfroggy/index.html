@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>OAMD</title>
+</head>
+<body>
+    <h1>FLEXBOX FROGGY</h1>
+    Para jugar ingresa en <a href="https://flexboxfroggy.com/#es">flexboxfroggy.com</a>
+
+    <h2>justify content</h2>
+    Usando la propiedad justify-content, la cual alinea elementos horizontalmente y acepta los siguientes valores:
+
+    flex-start: Alinea elementos al lado izquierdo del contenedor.
+    flex-end: Alinea elementos al lado derecho del contenedor.
+    center: Alinea elementos en el centro del contenedor.
+    space-between: Muestra elementos con la misma distancia entre ellos.
+    space-around: Muestra elementos con la misma separación alrededor de ellos.
+
+    <h3>flex-end</h3>
+    <img src="img/flex-end.jpg" alt="imagen flex-end">
+    <p>justify-content: flex-end</p>
+
+    <h3>Center</h3>
+    <img src="img/justify-content_center.jpg" alt="imagen ">
+    <p>justify-content: center</p>
+
+    <h3>Space Around </h3>
+    <img src="img/justify-content_space-around.jpg" alt="imagen space-around">
+    <p>justify-content:space-around</p>
+
+    <h3>space between </h3>
+    <img src="img/justify-content_space-between.jpg" alt="imagen space between">
+    <p>justify-content:space-between</p>
+
+    <h2>align-items</h2>
+
+    Ahora usa align-items para ayudar a las ranas a llegar al fondo del estanque. Esta propiedad CSS alinea elementos verticalmente y acepta los siguientes valores:
+
+        flex-start: Alinea elementos a la parte superior del contenedor.
+        flex-end: Alinea elementos a la parte inferior del contenedor.
+        center: Alinea elementos en el centro (verticalmente hablando) del contenedor.
+        baseline: Muestra elementos en la línea base del contenedor
+        stretch: Elementos se estiran para ajustarse al contenedor.
+
+    
+    <h3> flex-end </h3>
+    <img src="img/align-items_flex-end.jpg" alt="imagen align-items  flex-end">
+    <p>align-items:flex-end;</p>
+
+    <h3> Combinando  justify-content y align-items.</h3>
+    <img src="img/C_Ac_Jc.jpg" alt="imagen justify-content y align-items">
+    <p>align-items: center
+        justify-content:center</p>
+
+    <h3> justify-content y align-items.</h3>
+    <img src="img/J_Sa_A_fe.jpg" alt="imagen justify-content y align-items.">
+    <p>justify-content:space-around
+        align-items:flex-end</p>
+    
+    <h2>Flex direction</h2>
+    Esta propiedad CSS define la dirección de los elementos en el contenedor, y acepta los siguientes valores:
+
+    row: Elementos son colocados en la misma dirección del texto.
+    row-reverse: Elementos son colocados en la dirección opuesta al texto.
+    column: Elementos se colocan de arriba hacia abajo.
+    column-reverse: Elementos se colocan de abajo hacia arriba.
+
+    <h3>row-reverse </h3>
+    <img src="img/flex-direction_row-reverse.jpg" alt="imagen flex-direction row-reverse antes">
+    <img src="img/flex-direction_row-reverse_2.jpg" alt="imagen flex-direction row-reverse despues">
+    <p>flex-direction:row-reverse</p>
+
+    <h3>column</h3>
+    <img src="img/flex-direction_column.jpg" alt="imagen flex-direction column antes">
+    <img src="img/flex-direction_column2.jpg" alt="imagen flex-direction column despues ">
+    <p>flex-direction:column</p>
+
+    <h3>Combinando flex-direction y justify-content </h3>
+    <img src="img/Frr_Jfe.jpg" alt="imagen flex-direction y justify-content Antes">
+    <img src="img/Frr_Jfe2.jpg" alt="imagen flex-direction y justify-content Despues">
+    <p>flex-direction:row-reverse;
+        justify-content:flex-end;</p>
+
+    <h3> Combinando flex-direction y justify-content.</h3>
+    <img src="img/Fc_Jfe.jpg" alt="imagen flex-direction justify-content antes ">
+    <img src="img/Fc_Jfe2.jpg" alt="imagen flex-direction justify-content despues ">
+  
+    <p>flex-direction:column
+        justify-content:flex-end</p>
+
+    <h3>Combinando flex-direction y justify-content. </h3>
+    <img src="img/Fcr_Jsp.jpg" alt="imagen flex-direction justify-content antes ">
+    <img src="img/Fcr_Jsp2.jpg" alt="imagen flex-direction justify-content despues ">
+
+    <p>flex-direction:column-reverse
+        justify-content:space-between</p>
+
+    <h3>Combinando  flex-direction, justify-content, y align-items. </h3>
+    <img src="img/Frr_Jc_Afe.jpg" alt="imagen Combinando  flex-direction, justify-content, y align-items antes">
+    <img src="img/Frr_Jc_Afe2.jpg" alt="imagen Combinando  flex-direction, justify-content, y align-items despues">
+
+    <h2>order</h2>
+
+    A veces, invertir el orden de una fila o columna de un contenedor no es suficiente. En esos casos, nosotros podemos aplicar la propiedad order a elementos individuales. Por defecto, los elementos tienen un valor 0, pero nosotros podemos usar esta propiedad para establecerlo a un número entero positivo o negativo.
+
+
+    <h3> Order</h3>
+    <img src="img/order.jpg" alt="imagen Order antes">
+    <img src="img/order2.jpg" alt="imagen Order despues">
+    <p>order:3</p>
+    
+    <img src="img/order_a.jpg" alt="Otra imagen Order antes">
+    <img src="img/order_a2.jpg" alt="Otra imagen Order despues">
+    <p>order:-1;</p>
+
+    <h2>align-self</h2>
+    Otra propiedad que puedes aplicar a elementos individuales es align-self. Esta propiedad acepta los mismos valores de align-items y sus valores son usados para un elemento específico
+
+    <h3> align-self</h3>
+    <img src="img/A_fe.jpg" alt="imagen align-self">
+    <img src="img/A_fe2.jpg" alt="imagen align-self">
+    <p>align-self:flex-end</p>
+
+    <h3> Combinar order con align-self</h3>
+    <img src="img/O_Afe.jpg" alt="imagen combinada order con align-self antes">
+    <img src="img/O_Afe2.jpg" alt="imagen combinada order con align-self despues">
+    <p>order:1;
+        align-self:flex-end</p>
+    
+    <h2>flex-wrap</h2>
+        ¡Oh, no! Todas las ranas están apretadas en una sola fila de hojas de lirio. Manos a la obra, vamos a distribuirlas correctamente usando la propiedad flex-wrap, la cual acepta los siguientes valores:
+
+        nowrap: Cada elemento se ajusta en una sola línea.
+        wrap: los elementos se envuelven alrededor de líneas adicionales.
+        wrap-reverse: Los elementos se envuelven alrededor de líneas adicionales en reversa.
+
+    <h3>wrap </h3>
+    <img src="img/wrap.jpg" alt="imagen flex-wrap antes">
+    <img src="img/wrap2.jpg" alt="imagen flex-wrap de">
+    <p>flex-wrap:wrap</p>
+
+    <h3> Combinar flex-direction y flex-wrap.</h3>
+    <img src="img/FdC_FwW.jpg" alt="Imagen Combinar flex-direction y flex-wrap ">
+    <img src="img/FdC_FwW2.jpg" alt="Imagen Combinar flex-direction y flex-wrap ">
+    <p>flex-direction:column
+        flex-wrap:wrap</p>
+    <h2>flex-flow</h2>
+
+    Las dos propiedades flex-direction y flex-wrap son usadas a menudo en conjunto con la propiedad abreviada flex-flow, la cual fue creada para combinarlas. Esta propiedad abreviada, acepta un valor de cada una separada por un espacio.
+
+    Por ejemplo, puedes usar flex-flow para establecer filas y envolverlas.
+
+    Trata de usar flex-flow para volver a realizar el nivel anterior.
+    <h3> flex-flow</h3>
+    <img src="img/Ffcw.jpg" alt="Imagen flex-flow antes">
+    <img src="img/Ffcw2.jpg" alt="Imagen flex-flow despues">
+    <p>flex-flow:column wrap</p>
+
+    <h2>align-content</h2>
+
+    Las ranas están repartidas por todo el estanque, pero las hojas de lirio están agrupadas en la parte superior. Puedes usar align-content para establecer como múltiples líneas están separadas una de otra. Esta propiedad acepta los siguientes valores:
+
+    flex-end: Las líneas se posicionan en la parte inferior del contenedor.
+    center: Las líneas se posicionan en el centro (verticalmente hablando) del contenedor.
+    space-between: Las líneas se muestran con la misma distancia entre ellas.
+    space-around: Las líneas se muestran con la misma separación alrededor de ellas.
+    stretch: Las líneas se estiran para ajustarse al contenedor.
+    Esto puede ser confuso, pero align-content determina el espacio entre las líneas, mientras que align-items determina como los elementos en su conjunto están alineados dentro del contenedor. Cuando hay solo una línea, align-content no tiene efecto.
+    
+    flex-start: Las líneas se posicionan en la parte superior del contenedor.
+
+    <h3>align-content:flex-start </h3>
+    <img src="img/Ac_fs.jpg" alt="imagen align-content:flex-start antes">
+    <img src="img/Ac_fs2.jpg" alt="imagen align-content:flex-start">
+    <p>align-content:flex-start</p>
+
+
+    <h3>flex-end </h3>
+    <img src="img/Ac_fe.jpg" alt="imagen flex-end antes">
+    <img src="img/Ac_fe2.jpg" alt="imagen flex-end despues">
+    <p>align-content:flex-end</p>
+
+    <h3>Combinacion flex-direction y align-content  </h3>
+    <img src="img/Fd_Cr_Ac.jpg" alt="imagen flex-direction y align-content Antes">
+    <img src="img/Fd_Cr_Ac2.jpg" alt="imagen flex-direction y align-content despues">
+    <p>flex-direction:column-reverse;
+        align-content:center;</p>
+
+    <h3> Combinando todo</h3>
+    <img src="img/all.jpg" alt="Todos las propiedades antes">
+    <img src="img/all2.jpg" alt="Todos las propiedades despues">
+    <p>flex-flow:column-reverse wrap;
+        justify-content:center;
+        flex-wrap:wrap-reverse;
+        align-content:space-between;</p>
+
+</body>
+</html>

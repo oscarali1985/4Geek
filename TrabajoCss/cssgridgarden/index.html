@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>OAMD CSS grid</title>
+</head>
+<body>
+    <h1>
+        <a href="https://cssgridgarden.com/#es">cssgridgarden</a>
+    </h1>
+
+    <img src="img/grigarden.jpg" alt="griddarden ejemplo">
+    
+    <h3> grid-column-start</h3>
+    <img src="img/grid-column-start.jpg" alt="grid-column-start">
+    <img src="img/grid-column-start2.jpg" alt="grid-column-start">
+    <p>grid-column-start: 5</p>
+
+    <h3>grid-column-end</h3>
+    <img src="img/grid-column-end.jpg" alt="grid-column-end">
+    <img src="img/grid-column-end2.jpg" alt="grid-column-end">
+    <p>grid-column-end:4;</p>
+
+    <h3>Ahora al contrario</h3>
+    <img src="img/grid-column-end_a.jpg" alt="grid-column-start">
+    <img src="img/grid-column-end_a.jpg" alt="grid-column-endr">
+    <p>grid-column-end:2</p>
+
+    <h3>aplicando valores negativos</h3>
+    <img src="img/grid-column-end_b.jpg" alt="grid-column-start">
+    <img src="img/grid-column-end_b2.jpg" alt="grid-column-end">
+    <p>grid-column-end: -2;</p>
+
+    <h2>span</h2>
+    En lugar de definir un elemento en la cuadrícula basado en la posicion inicial y final, puedes definirlo basado en la longitud de columnas deseada usando la palabra clave span. Ten presente que span solo funciona con valores positivos.
+
+    Por ejemplo, riega las zanahorias usando grid-column-end: span 2;
+
+    <h3>span</h3>
+    <img src="img/span.jpg" alt="span">
+    <img src="img/span2.jpg" alt="span">
+    <p>grid-column-end: span 2;</p>
+
+    <h3>grid-column-start_span</h3>
+    <img src="img/grid-column-start_span.jpg" alt="grid-column-start_span">
+    <img src="img/grid-column-start_span2.jpg" alt="grid-column-start_span">
+    <p>grid-column-start:span 3;</p>
+
+    <h2>grid-column</h2>
+    Escribir ambos grid-column-start y grid-column-end cada vez puede resultar cansado. Afortunadamente, grid-column es una propiedad abreviada que acepta ambos valores a la vez, separados por una barra oblicua.
+
+    Por ejemplo, grid-column: 2 / 4; establecerá el comienzo del elemento de la cuadrícula en la 2ª línea vertical de esta, y su final en la 4ª línea vertical.
+
+    <h3>grid-column</h3>
+    <img src="img/grid-column.jpg" alt="grid-column">
+    <img src="img/grid-column2.jpg" alt="grid-column">
+    <p>grid-column: 4/6;</p>
+    
+    <h3>grid-column span</h3>
+    <img src="img/grid-column span.jpg" alt="grid-column span">
+    <img src="img/grid-column span2.jpg" alt="grid-column span">
+    <p>grid-column: span 3/5</p>
+    
+    <h2>grid-row-start</h2>
+    
+    Una de las cosas que diferencia las cuadrículas de CSS de flexbox es que puedes posicionar los elementos fácilmente en 2 dimensiones: columnas y filas. grid-row-start funciona de manera semejante a grid-column-start pero a lo largo del eje vertical.
+
+    <h3>grid-row-start</h3>
+    <img src="img/grid-row-start.jpg" alt="imagen grid-row-start antes">
+    <img src="img/grid-row-start2.jpg" alt="imagen grid-row-start despues">
+    <p>grid-row-start:3</p>
+
+    <h3>grid-row</h3>
+    <img src="img/grid-row.jpg" alt="grid-row antes">
+    <img src="img/grid-row2.jpg" alt="grid-row despues">
+    <p>grid-row: 3/6;</p>
+
+    <h3>grid-column y grid-row</h3>
+    <img src="img/Gc_Gr.jpg" alt="grid-column y grid-row antes">
+    <img src="img/Gc_Gr2.jpg" alt="grid-column y grid-row despues">
+    <p>grid-column:2
+        grid-row: 5</p>
+
+    <h3>grid-column y grid-row </h3>
+    <img src="img/Gc_Gr_mul.jpg" alt="grid-column y grid-row ">
+    <img src="img/Gc_Gr_mul2.jpg" alt="grid-column y grid-row ">
+    <p>grid-column: 2/ 6
+        grid-row: 1/6</p>
+
+    <h2>grid-area</h2>
+    Si escribir grid-column y grid-row se te hace demasiado pesado, aquí tienes otra propiedad abreviada. grid-area admite cuatro valores separados por barras oblicuas: grid-row-start, grid-column-start, grid-row-end, seguido de grid-column-end.
+
+    Un ejemplo de esto podría ser grid-area: 1 / 1 / 3 / 6;.
+
+    <h3>grid-area</h3>
+    <img src="img/grid-area.jpg" alt="grid-area">
+    <img src="img/grid-area2.jpg" alt="grid-area">
+    <p>grid-area: 1 / 2 / 4 / 6;</p>
+
+    <img src="img/grid-area_a.jpg" alt="grid-area">
+    <img src="img/grid-area_a2.jpg" alt="grid-area">
+
+    <p>grid-area: 2 /3 /5 /6</p>
+    
+    <h2>order</h2>
+    Si los elementos de la cuadrícula no se sitúan explícitamente con grid-area, grid-column, grid-row, etc., se sitúan automáticamente de acuerdo al orden en el código fuente. Puedes sobrescribir esto usando la propiedad order, que es una de las ventajas de la cuadrícula frente al diseño basado en tablas.
+
+    Por defecto, el valor de order de todos los elementos es igual a 0, pero puede ser establecido a cualquier valor positivo o negativo, de manera similar a z-index.
+
+    Ahora mismo, las zanahorias en la segunda columna están siendo envenenadas y las malas hierbas en la última columna, regadas. !Cambia el valor de order del veneno para solucionar esto!
+
+    <h3></h3>
+    <img src="img/order.jpg" alt="imagen order">
+    <img src="img/order2.jpg" alt="imagen order">
+    <p>order: 5;</p>
+
+    <img src="img/order_a.jpg" alt="otra imagen order">
+    <img src="img/order_a2.jpg" alt="otra imagen order">
+    <p>order:-1</p>
+
+    <h3>Cambio el tamaño de las columnas</h3>
+    Hasta este momento, has tenido un jardín formado por cinco columnas, cada una ocupando el 20% de la anchura total, y cinco filas, cada una ocupando el 20% de la altura total.
+    
+    Pero puedes establecer los valores en la cuadrícula como quieras. Da a grid-template-columns un nuevo valor para regar tus zanahorias. Querrás que la anchura de la primera columna sea del 50%.
+    
+    Esto ha sido establecido con las propiedades grid-template-columns: 20% 20% 20% 20% 20%; y grid-template-rows: 20% 20% 20% 20% 20%;. Cada propiedad tiene cinco valores que crean cinco columnas, cada una establecida al 20% de la anchura total del jardín.
+
+    #garden {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+      }
+      
+      #water {
+        grid-column: 1;
+        grid-row: 1;
+      }
+
+    <h3> grid-template-columns </h3>
+    <img src="img/grid-template-columns.jpg" alt="grid-template-columns">
+    <img src="img/grid-template-columns2.jpg" alt="grid-template-columns">
+    <p>grid-template-columns: 50% 50%;</p>
+
+    <h2>Repeat</h2>
+    Especificar un puñado de columnas con la misma anchura puede ser aburrido. Afortunadamente hay una función repeat que te ayudará con eso.
+
+    Por ejemplo, previamente hemos definido cinco columnas al 20% de anchura mediante grid-template-columns: 20% 20% 20% 20% 20%;. Esto puedes simplificarse como grid-template-columns: repeat(5, 20%);
+
+    Usando grid-template-columns con la función repeat, crea ocho columnas, cada una con una anchura del 12.5%. De esta manera no inundarás tu jardín.
+
+    <h3>Repeat</h3>
+    <img src="img/grid-template-columns_repeat.jpg" alt="grid-template-columns: repeat">
+    <img src="img/grid-template-columns_repeat2.jpg" alt="grid-template-columns: repeat">
+    <p>grid-template-columns: repeat(8, 12.5%);</p>
+
+    <h2>grid-template-columns aplicando pixels y ems</h2>
+    grid-template-columns no acepta solo valores porcentuales, sino también otras unidades como pixels y ems. Incluso puedes mezclar diferentes unidades a la vez.
+
+    Establece tres columnas a 100px, 3em, y 40% respectivamente.
+    
+    <h3></h3>
+
+    <img src="img/pixeles.jpg" alt="aplicando pixeles">
+    <img src="img/pixeles2.jpg" alt="aplicando pixeles">
+    <p>grid-template-columns: 100px 3em 40%</p>
+
+    <h2>FR</h2>
+
+    CSS Grid también introduce una nueva medida, la fracción fr. Cada unidad fr asigna una porción del espacio disponible. Por ejemplo, si dos elementos están establecidos a 1fr y 3fr respectivamente el espacio se divide en 4 porciones iguales; el primer elemento ocupa 1/4 del espacio y el segundo elemento los 3/4 restantes.
+
+    Ahora las malas hierbas ocupan 1/6 de tu primera fila y las zanahorias los restantes 5/6. Crea dos columnas con ese ancho empleando fr.
+
+    <h3>grid-template-columns y fr</h3>
+    <img src="img/fr.jpg" alt="grid-template-columns y fr antes">
+    <img src="img/fr2.jpg" alt="grid-template-columns y fr despues">
+    <p>grid-template-columns: 1.2fr 6fr</p>
+
+    <h3>ejercicio 24</h3>
+    <img src="" alt="">
+    <p></p>
+
+    <h3></h3>
+    <img src="" alt="">
+    <p></p>
+
+    <h3></h3>
+    <img src="" alt="">
+    <p></p>
+
+
+</body>
+</html>
