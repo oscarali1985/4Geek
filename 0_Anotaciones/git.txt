@@ -1,6 +1,7 @@
 Info Git
 
-Git init
+git help 
+Git init para iniciar proyecto
 Git status
 
 git add . o archivo
@@ -13,13 +14,23 @@ git commit
 git commit -m "hola"
 Se añade version y se guarda :wq!
 
-git log
+git log para verificar los estados realizados
+git log > commits.txt
+
+git reset para borrar un commit anterior
+git reset --soft no modifica el codigo
+git reset --mixed
+git reset --hard borra todo
 
 ----
 Git branch
 git brancj login
-git check out login
-git cheout master
+git check out login 
+git cheout master para volver al ultimo commit
+
+git checkout mas hash del commit para regressar a otra version
+
+git merge rama para fusionar las dos ramas
 
 https://github.com/oscarali1985/4geek.git
 
